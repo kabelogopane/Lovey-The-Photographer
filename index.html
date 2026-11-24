@@ -1,157 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Meet Lovey The Photographer, a young Sotho photographer from Tembisa, capturing people, places and meaningful moments.">
-  <meta name="theme-color" content="#f4efe6">
-  <title>Lovey The Photographer — Stories Through My Lens</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lovey The Photographer — contemporary photography, stories and moments from Tembisa, South Africa.">
+  <meta name="theme-color" content="#eee7d9">
+  <meta property="og:title" content="Lovey The Photographer — Through My Lens">
+  <meta property="og:description" content="People, stories and moments captured through Lovey's lens in Tembisa, South Africa.">
+  <meta property="og:type" content="website">
+  <title>Lovey The Photographer — Through My Lens</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="wordmark" href="#home">LOVEY<span>®</span></a>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="#work">The work</a><a href="#about">The story</a><a href="#services">What I shoot</a><a href="#contact">Contact</a>
-      <a class="nav-book" href="#booking">Let's create <span>↗</span></a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Lovey The Photographer home">LOVEY<span>®</span><small>THE PHOTOGRAPHER</small></a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#gallery">The gallery</a><a href="#about">My story</a><a href="#services">What I capture</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="#booking">Let's create <span>↗</span></a>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" id="home">
+      <div class="hero-art" aria-hidden="true"><span class="hero-sun"></span><span class="hero-mark">T</span></div>
       <div class="hero-copy">
-        <p class="eyebrow"><span class="dot"></span> PHOTOGRAPHER · TEMBISA, SOUTH AFRICA</p>
-        <h1>I see life<br>in <em>frames.</em></h1>
-        <p class="hero-intro">I'm Lovey. A young Sotho photographer with a passion for capturing people, places and moments worth remembering.</p>
-        <div class="hero-links"><a class="pill-link" href="#work">Explore my work <span>↘</span></a><a class="plain-link" href="#about">Get to know me</a></div>
+        <p class="eyebrow"><span class="live-dot"></span> INDEPENDENT PHOTOGRAPHER · TEMBISA, SA</p>
+        <h1>Life looks<br>different <em>through</em><br>my lens<span class="period">.</span></h1>
+        <div class="hero-bottomline">
+          <p>People. Places. Culture. The little moments that become the big memories.</p>
+          <a class="round-link" href="#gallery" aria-label="Explore the gallery">↓</a>
+        </div>
+        <div class="hero-index"><span>VISUAL STORIES FROM THE HEART OF TEMBISA</span><span>SCROLL TO EXPLORE — 01/05</span></div>
       </div>
-      <div class="hero-visual">
-        <div class="hero-photo"><img src="picture.jpg" alt="A photograph from Lovey's collection"></div>
-        <div class="photo-stamp">REAL PEOPLE.<br>REAL MOMENTS.<br><b>MY PERSPECTIVE.</b></div>
-        <span class="vertical-note">INDEPENDENT PHOTOGRAPHER — EST. TEMBISA</span>
+      <div class="hero-image-wrap">
+        <div class="hero-image"><img src="picture.jpg" alt="Featured photograph from Lovey's collection"></div>
+        <div class="hero-image-label"><span>SELECTED WORK</span><b>VOL. 01 / 2026</b></div>
+        <span class="hero-side-note">A DIFFERENT POINT OF VIEW</span>
       </div>
-      <div class="hero-bottom"><span>01 — 04</span><span>SCROLL TO EXPLORE ↓</span><span>CREATIVITY HAS NO LIMITS</span></div>
     </section>
 
-    <section class="ticker" aria-label="Photography themes"><div>PEOPLE <b>✳</b> STORIES <b>✳</b> CULTURE <b>✳</b> MOMENTS <b>✳</b> LIFE <b>✳</b> PEOPLE <b>✳</b> STORIES <b>✳</b> CULTURE <b>✳</b></div></section>
+    <div class="marquee" aria-label="People, culture, stories and moments"><div>PEOPLE <i>✳</i> CULTURE <i>✳</i> STORIES <i>✳</i> MOMENTS <i>✳</i> LIFE <i>✳</i> PEOPLE <i>✳</i> CULTURE <i>✳</i> STORIES <i>✳</i></div></div>
 
-    <section class="work-section section-wrap" id="work">
-      <div class="section-top"><p class="eyebrow">01 / THE PORTFOLIO</p><p class="section-aside">A selection of moments<br>seen through my lens.</p></div>
-      <div class="album-cover"><div class="album-cover-copy"><span class="album-kicker">LOVEY THE PHOTOGRAPHER PRESENTS</span><h2>The<br><em>Photo Album.</em></h2><p>Little pieces of life, collected one photograph at a time.</p><span class="album-edition">TEMBISA • SOUTH AFRICA / VOL. 01</span></div><div class="album-cover-photo"><img src="picture2.jpg" alt="A featured photograph from Lovey's collection" loading="lazy"><span class="cover-sticker">OPEN<br>MY<br>WORLD ↘</span></div><span class="album-side-note">A VISUAL JOURNEY THROUGH MY LENS</span></div><div class="album-intro"><span>THE COLLECTION / 001—013</span><p>Not just pictures. Little stories, moods and moments worth keeping.</p><span>SCROLL THE ALBUM ↓</span></div>
-      <div class="gallery">
-        <figure class="work-item work-1">
-          <a href="471308990_637576301932344_2126745243047520496_n.jpg" target="_blank" rel="noopener"><img src="471308990_637576301932344_2126745243047520496_n.jpg" alt="Photography by Lovey — image 1" loading="lazy"></a>
-          <figcaption><span>FRAME 01</span><span>LOVEY THE PHOTOGRAPHER</span></figcaption>
-        </figure>
-        <figure class="work-item work-2">
-          <a href="471425883_637051451984829_5883520850650698933_n.jpg" target="_blank" rel="noopener"><img src="471425883_637051451984829_5883520850650698933_n.jpg" alt="Photography by Lovey — image 2" loading="lazy"></a>
-          <figcaption><span>FRAME 02</span><span>LOVEY THE PHOTOGRAPHER</span></figcaption>
-        </figure>
-        <figure class="work-item work-3">
-          <a href="471589745_637568101933164_6524929683144109706_n.jpg" target="_blank" rel="noopener"><img src="471589745_637568101933164_6524929683144109706_n.jpg" alt="Photography by Lovey — image 3" loading="lazy"></a>
-          <figcaption><span>FRAME 03</span><span>LOVEY THE PHOTOGRAPHER</span></figcaption>
-        </figure>
-        <figure class="work-item work-4">
-          <a href="471692687_637568351933139_918331466039077042_n.jpg" target="_blank" rel="noopener"><img src="471692687_637568351933139_918331466039077042_n.jpg" alt="Photography by Lovey — image 4" loading="lazy"></a>
-          <figcaption><span>FRAME 04</span><span>LOVEY THE PHOTOGRAPHER</span></figcaption>
-        </figure>
-        <figure class="work-item work-5">
-          <a href="471750770_637585321931442_6968310246634869096_n.jpg" target="_blank" rel="noopener"><img src="471750770_637585321931442_6968310246634869096_n.jpg" alt="Photography by Lovey — image 5" loading="lazy"></a>
-          <figcaption><span>FRAME 05</span><span>LOVEY THE PHOTOGRAPHER</span></figcaption>
-        </figure>
-        <figure class="work-item work-6">
-          <a href="471781432_637568095266498_7451588384375634728_n.jpg" target="_blank" rel="noopener"><img src="471781432_637568095266498_7451588384375634728_n.jpg" alt="Photography by Lovey — image 6" loading="lazy"></a>
-          <figcaption><span>FRAME 06</span><span>LOVEY THE PHOTOGRAPHER</span></figcaption>
-        </figure>
-        <figure class="work-item work-7">
-          <a href="471984671_637568255266482_2558833969508549574_n.jpg" target="_blank" rel="noopener"><img src="471984671_637568255266482_2558833969508549574_n.jpg" alt="Photography by Lovey — image 7" loading="lazy"></a>
-          <figcaption><span>FRAME 07</span><span>LOVEY THE PHOTOGRAPHER</span></figcaption>
-        </figure>
-        <figure class="work-item work-8">
-          <a href="472106640_642642304759077_7989565307254708913_n.jpg" target="_blank" rel="noopener"><img src="472106640_642642304759077_7989565307254708913_n.jpg" alt="Photography by Lovey — image 8" loading="lazy"></a>
-          <figcaption><span>FRAME 08</span><span>LOVEY THE PHOTOGRAPHER</span></figcaption>
-        </figure>
-        <figure class="work-item work-9">
-          <a href="472181370_641879794835328_1389156106870825808_n.jpg" target="_blank" rel="noopener"><img src="472181370_641879794835328_1389156106870825808_n.jpg" alt="Photography by Lovey — image 9" loading="lazy"></a>
-          <figcaption><span>FRAME 09</span><span>LOVEY THE PHOTOGRAPHER</span></figcaption>
-        </figure>
-        <figure class="work-item work-10">
-          <a href="472252474_641880121501962_6239816957336488626_n.jpg" target="_blank" rel="noopener"><img src="472252474_641880121501962_6239816957336488626_n.jpg" alt="Photography by Lovey — image 10" loading="lazy"></a>
-          <figcaption><span>FRAME 10</span><span>LOVEY THE PHOTOGRAPHER</span></figcaption>
-        </figure>
-        <figure class="work-item work-11">
-          <a href="472331836_641880128168628_9195835983872782730_n.jpg" target="_blank" rel="noopener"><img src="472331836_641880128168628_9195835983872782730_n.jpg" alt="Photography by Lovey — image 11" loading="lazy"></a>
-          <figcaption><span>FRAME 11</span><span>LOVEY THE PHOTOGRAPHER</span></figcaption>
-        </figure>
-        <figure class="work-item work-12">
-          <a href="picture.jpg" target="_blank" rel="noopener"><img src="picture.jpg" alt="Photography by Lovey — image 12" loading="lazy"></a>
-          <figcaption><span>FRAME 12</span><span>LOVEY THE PHOTOGRAPHER</span></figcaption>
-        </figure>
-        <figure class="work-item work-13">
-          <a href="picture2.jpg" target="_blank" rel="noopener"><img src="picture2.jpg" alt="Photography by Lovey — image 13" loading="lazy"></a>
-          <figcaption><span>FRAME 13</span><span>LOVEY THE PHOTOGRAPHER</span></figcaption>
-        </figure>
+    <section class="gallery-section section-pad" id="gallery">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 — THE VISUAL ARCHIVE</p><h2>Frames from<br><em>my world.</em></h2></div>
+        <p class="heading-note">A growing collection of people, places and moments seen from my point of view.</p>
       </div>
-      <p class="gallery-footnote"><span>END OF VOLUME 01</span> Every photograph holds a story. More pages coming soon. <a href="#booking">Want your moment in the next album? ↗</a></p>
+      <div class="gallery-intro"><span>THE COLLECTION / 001—013</span><p>Not just photographs. A little piece of the moment, kept forever.</p><span>SELECT A FRAME TO EXPLORE ↗</span></div>
+      <div class="photo-grid" id="photo-grid" aria-label="Photography portfolio">
+        <figure class="photo-card card-a"><button class="photo-open" type="button" data-index="0" aria-label="Open photograph 1"><img src="471308990_637576301932344_2126745243047520496_n.jpg" alt="Photograph 1 by Lovey" loading="lazy"><span class="image-number">01</span><span class="image-open">VIEW FRAME ↗</span></button><figcaption><span>01 / 13</span><span>LOVEY — THE COLLECTION</span></figcaption></figure>
+        <figure class="photo-card card-b"><button class="photo-open" type="button" data-index="1" aria-label="Open photograph 2"><img src="471425883_637051451984829_5883520850650698933_n.jpg" alt="Photograph 2 by Lovey" loading="lazy"><span class="image-number">02</span><span class="image-open">VIEW FRAME ↗</span></button><figcaption><span>02 / 13</span><span>LOVEY — THE COLLECTION</span></figcaption></figure>
+        <figure class="photo-card card-c"><button class="photo-open" type="button" data-index="2" aria-label="Open photograph 3"><img src="471589745_637568101933164_6524929683144109706_n.jpg" alt="Photograph 3 by Lovey" loading="lazy"><span class="image-number">03</span><span class="image-open">VIEW FRAME ↗</span></button><figcaption><span>03 / 13</span><span>LOVEY — THE COLLECTION</span></figcaption></figure>
+        <figure class="photo-card card-d"><button class="photo-open" type="button" data-index="3" aria-label="Open photograph 4"><img src="471692687_637568351933139_918331466039077042_n.jpg" alt="Photograph 4 by Lovey" loading="lazy"><span class="image-number">04</span><span class="image-open">VIEW FRAME ↗</span></button><figcaption><span>04 / 13</span><span>LOVEY — THE COLLECTION</span></figcaption></figure>
+        <figure class="photo-card card-e"><button class="photo-open" type="button" data-index="4" aria-label="Open photograph 5"><img src="471750770_637585321931442_6968310246634869096_n.jpg" alt="Photograph 5 by Lovey" loading="lazy"><span class="image-number">05</span><span class="image-open">VIEW FRAME ↗</span></button><figcaption><span>05 / 13</span><span>LOVEY — THE COLLECTION</span></figcaption></figure>
+        <figure class="photo-card card-f"><button class="photo-open" type="button" data-index="5" aria-label="Open photograph 6"><img src="471781432_637568095266498_7451588384375634728_n.jpg" alt="Photograph 6 by Lovey" loading="lazy"><span class="image-number">06</span><span class="image-open">VIEW FRAME ↗</span></button><figcaption><span>06 / 13</span><span>LOVEY — THE COLLECTION</span></figcaption></figure>
+        <figure class="photo-card card-g"><button class="photo-open" type="button" data-index="6" aria-label="Open photograph 7"><img src="471984671_637568255266482_2558833969508549574_n.jpg" alt="Photograph 7 by Lovey" loading="lazy"><span class="image-number">07</span><span class="image-open">VIEW FRAME ↗</span></button><figcaption><span>07 / 13</span><span>LOVEY — THE COLLECTION</span></figcaption></figure>
+        <figure class="photo-card card-h"><button class="photo-open" type="button" data-index="7" aria-label="Open photograph 8"><img src="472106640_642642304759077_7989565307254708913_n.jpg" alt="Photograph 8 by Lovey" loading="lazy"><span class="image-number">08</span><span class="image-open">VIEW FRAME ↗</span></button><figcaption><span>08 / 13</span><span>LOVEY — THE COLLECTION</span></figcaption></figure>
+        <figure class="photo-card card-i"><button class="photo-open" type="button" data-index="8" aria-label="Open photograph 9"><img src="472181370_641879794835328_1389156106870825808_n.jpg" alt="Photograph 9 by Lovey" loading="lazy"><span class="image-number">09</span><span class="image-open">VIEW FRAME ↗</span></button><figcaption><span>09 / 13</span><span>LOVEY — THE COLLECTION</span></figcaption></figure>
+        <figure class="photo-card card-j"><button class="photo-open" type="button" data-index="9" aria-label="Open photograph 10"><img src="472252474_641880121501962_6239816957336488626_n.jpg" alt="Photograph 10 by Lovey" loading="lazy"><span class="image-number">10</span><span class="image-open">VIEW FRAME ↗</span></button><figcaption><span>10 / 13</span><span>LOVEY — THE COLLECTION</span></figcaption></figure>
+        <figure class="photo-card card-k"><button class="photo-open" type="button" data-index="10" aria-label="Open photograph 11"><img src="472331836_641880128168628_9195835983872782730_n.jpg" alt="Photograph 11 by Lovey" loading="lazy"><span class="image-number">11</span><span class="image-open">VIEW FRAME ↗</span></button><figcaption><span>11 / 13</span><span>LOVEY — THE COLLECTION</span></figcaption></figure>
+        <figure class="photo-card card-l"><button class="photo-open" type="button" data-index="11" aria-label="Open photograph 12"><img src="picture.jpg" alt="Photograph 12 by Lovey" loading="lazy"><span class="image-number">12</span><span class="image-open">VIEW FRAME ↗</span></button><figcaption><span>12 / 13</span><span>LOVEY — THE COLLECTION</span></figcaption></figure>
+        <figure class="photo-card card-m"><button class="photo-open" type="button" data-index="12" aria-label="Open photograph 13"><img src="picture2.jpg" alt="Photograph 13 by Lovey" loading="lazy"><span class="image-number">13</span><span class="image-open">VIEW FRAME ↗</span></button><figcaption><span>13 / 13</span><span>LOVEY — THE COLLECTION</span></figcaption></figure>
+      </div>
+      <div class="gallery-end"><span>END OF THE FIRST COLLECTION</span><p>Every frame holds a feeling.<br><em>More stories coming.</em></p><a href="#booking">LET'S CREATE YOURS ↗</a></div>
     </section>
+
+    <section class="statement-band"><span>THE ART OF NOTICING</span><p>“The beauty is already there.<br><em>Sometimes, you just have to frame it.</em>”</p><span>LOVEY THE PHOTOGRAPHER · TEMBISA</span></section>
 
     <section class="about-section" id="about">
-      <div class="about-image"><img src="picture2.jpg" alt="A selected photograph by Lovey" loading="lazy"><span>FROM TEMBISA, WITH PASSION.</span></div>
-      <div class="about-copy">
-        <p class="eyebrow">02 / THE PERSON BEHIND THE CAMERA</p>
-        <h2>Local roots.<br><em>A creative eye.</em></h2>
-        <p class="about-lead">I'm Lovey — a young Sotho guy from Tembisa who sees photography as more than taking pictures.</p>
-        <p>For me, it's about noticing the little things, meeting people, capturing different personalities and keeping moments alive through images. I'm passionate about learning, creating and growing with every frame I take.</p>
-        <p>This is my space to share that journey and the photographs I'm proud to create. Thanks for being here.</p>
-        <a class="dark-link" href="#contact">Let's work together <span>↗</span></a>
-      </div>
+      <div class="about-photo"><img src="picture2.jpg" alt="A selected image from Lovey's photography collection" loading="lazy"><span class="photo-caption">ROOTED IN TEMBISA. OPEN TO THE WORLD.</span></div>
+      <div class="about-copy"><p class="eyebrow">02 — THE PERSON BEHIND THE LENS</p><h2>Local roots.<br><em>Creative vision.</em></h2><p class="about-lead">I'm Lovey — a young Sotho photographer from Tembisa, South Africa.</p><p>Photography gives me a way to notice the little things, meet people, capture different personalities and keep meaningful moments alive through images.</p><p>This is my space to share my work, keep learning and grow with every frame. Thanks for taking a look.</p><a class="text-link" href="#contact">LET'S CONNECT <span>↗</span></a></div>
     </section>
 
-    <section class="services-section section-wrap" id="services">
-      <div class="section-top"><p class="eyebrow">03 / WHAT I LOVE TO CAPTURE</p><p class="section-aside">Different moments.<br>One camera. My point of view.</p></div>
-      <h2>What are we<br><em>capturing?</em></h2>
-      <div class="service-grid">
-        <article><span>01</span><h3>Portraits</h3><p>Personal portraits that show character, confidence and individuality.</p></article>
-        <article><span>02</span><h3>Celebrations</h3><p>Special days, milestones and the people who make them matter.</p></article>
-        <article><span>03</span><h3>Events</h3><p>The atmosphere, energy and moments that make an event memorable.</p></article>
-        <article><span>04</span><h3>Creative shoots</h3><p>Ideas, concepts and collaborations brought to life through photography.</p></article>
+    <section class="services-section section-pad" id="services">
+      <div class="section-heading"><div><p class="eyebrow">03 — THE POSSIBILITIES</p><h2>What shall we<br><em>capture?</em></h2></div><p class="heading-note">Different people, different occasions, different perspectives. Let's talk about the story you have in mind.</p></div>
+      <div class="service-list">
+        <article><span>01</span><h3>People & portraits</h3><p>Personal photographs that celebrate character and individuality.</p><b>↗</b></article>
+        <article><span>02</span><h3>Events & celebrations</h3><p>The atmosphere, connections and moments that make a day memorable.</p><b>↗</b></article>
+        <article><span>03</span><h3>Lifestyle & culture</h3><p>Everyday life, places, identity and the details that tell a bigger story.</p><b>↗</b></article>
+        <article><span>04</span><h3>Creative projects</h3><p>Ideas, concepts and collaborations explored through photography.</p><b>↗</b></article>
       </div>
+      <p class="service-note">Have something different in mind? <a href="#booking">Tell me about it ↗</a></p>
     </section>
 
     <section class="booking-section" id="booking">
-      <div class="booking-inner">
-        <p class="eyebrow">04 / HAVE AN IDEA?</p>
-        <h2>Let's make<br>it <em>happen.</em></h2>
-        <p class="booking-intro">Have a shoot in mind, an event coming up or an idea you'd like to explore? Tell me about it.</p>
+      <div class="booking-shape" aria-hidden="true">LET'S<br>MAKE<br>ART.</div>
+      <div class="booking-inner"><p class="eyebrow">04 — YOUR STORY, NEXT</p><h2>Have a moment<br>in <em>mind?</em></h2><p class="booking-intro">Tell me what you're planning. Let's talk about the idea and make something worth keeping.</p>
         <form id="booking-form">
-          <div class="form-row">
-            <label>Your name<input type="text" id="client-name" placeholder="What should I call you?" required></label>
-            <label>What are you planning?
-              <select id="session-type" required>
-                <option value="">Choose a type</option><option>Portrait photography</option><option>Wedding photography</option><option>Event photography</option><option>Creative shoot</option><option>Other / let's discuss</option>
-              </select>
-            </label>
-          </div>
-          <label>Tell me a little more<textarea id="session-message" rows="3" placeholder="Date, location, your idea — anything helpful..."></textarea></label>
-          <button class="submit-button" type="submit">Send enquiry on WhatsApp <span>↗</span></button>
+          <div class="form-row"><label for="client-name">Your name<input type="text" id="client-name" name="name" placeholder="Your name" required></label><label for="session-type">What are you planning?<select id="session-type" name="session" required><option value="">Choose an option</option><option>Portrait / people</option><option>Event / celebration</option><option>Lifestyle / culture</option><option>Creative project</option><option>Something else</option></select></label></div>
+          <label for="session-message">Tell me a little more<textarea id="session-message" name="message" rows="3" placeholder="Your idea, date, location or any details..."></textarea></label>
+          <button class="submit-button" type="submit">START A CONVERSATION <span>↗</span></button>
         </form>
       </div>
     </section>
 
-    <section class="contact-section section-wrap" id="contact">
-      <p class="eyebrow">05 / SAY HELLO</p>
-      <div class="contact-layout"><h2>Good things<br>start with <em>a hello.</em></h2><div class="contact-info">
-        <a href="https://wa.me/27677504303" target="_blank" rel="noopener"><small>WHATSAPP / CALL</small>+27 67 750 4303 ↗</a>
-        <a href="mailto:loveympiti@gmail.com"><small>EMAIL</small>loveympiti@gmail.com ↗</a>
-        <div><small>BASED IN</small>Eros Street, Tembisa<br>South Africa, 1632</div>
-      </div></div>
-    </section>
+    <section class="contact-section section-pad" id="contact"><p class="eyebrow">05 — KEEP IN TOUCH</p><div class="contact-layout"><h2>Good stories<br>start with <em>hello.</em></h2><div class="contact-details"><a href="https://wa.me/27677504303" target="_blank" rel="noopener"><small>WHATSAPP / CALL</small>+27 67 750 4303 ↗</a><a href="mailto:loveympiti@gmail.com"><small>EMAIL</small>loveympiti@gmail.com ↗</a><div><small>BASED IN</small>Eros Street, Tembisa<br>South Africa, 1632</div></div></div></section>
   </main>
-  <footer class="footer"><a class="wordmark" href="#home">LOVEY<span>®</span></a><p>Independent photographer · Tembisa, South Africa</p><p>© <span id="year"></span> Lovey The Photographer</p><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <footer class="site-footer"><a class="brand" href="#home">LOVEY<span>®</span><small>THE PHOTOGRAPHER</small></a><p>Independent photographer · Tembisa, South Africa</p><a href="#home">BACK TO TOP ↑</a><span>© <span id="year"></span> LOVEY THE PHOTOGRAPHER</span></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photograph viewer" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+    <button class="lightbox-prev" type="button" aria-label="Previous photograph">←</button>
+    <figure><img class="lightbox-image" src="" alt=""><figcaption><span class="lightbox-count"></span><span>LOVEY THE PHOTOGRAPHER</span></figcaption></figure>
+    <button class="lightbox-next" type="button" aria-label="Next photograph">→</button>
+  </div>
 </body>
 </html>
