@@ -67,3 +67,23 @@ document.addEventListener("keydown",event=>{
   if(event.key==="ArrowLeft")showImage(activeImage-1);
   if(event.key==="ArrowRight")showImage(activeImage+1);
 });
+
+// Reveal editorial sections as the visitor moves through the page.
+const revealTargets=document.querySelectorAll(".hero-copy,.hero-image-wrap,.section-heading,.gallery-intro,.photo-card,.gallery-end,.statement-band,.about-photo,.about-copy,.service-list article,.booking-inner,.contact-layout");
+revealTargets.forEach((element,index)=>{
+  element.classList.add("reveal");
+  if(element.classList.contains("photo-card")) element.style.transitionDelay=(index%4)*70+"ms";
+});
+if("IntersectionObserver" in window){
+  const revealObserver=new IntersectionObserver((entries,observer)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },{threshold:.12,rootMargin:"0px 0px -35px 0px"});
+  revealTargets.forEach(element=>revealObserver.observe(element));
+}else{
+  revealTargets.forEach(element=>element.classList.add("is-visible"));
+}
